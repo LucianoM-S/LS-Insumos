@@ -1,0 +1,204 @@
+/* ----General----*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(25, 25, 133);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+h1, h2, h4{ 
+    text-decoration: underline;
+}
+
+h2{
+    font-size: 40px;
+}
+p{
+    font-size: 20px;
+    margin-top: 10px;
+}
+::selection{
+    background-color: rgb(25, 25, 133);
+    color: aliceblue;
+}
+/*----Header----*/
+header{
+    background-color: rgb(64, 2, 165);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+h1 img{
+    max-width: 65%;   
+}
+h1{
+    text-align: center;
+    color: aliceblue;
+    font-size: 80px; 
+}
+.navbar-toggler{
+    border-color: rgb(198, 160, 255);
+    background-color: rgb(198, 160, 255);
+    
+}
+.navbar-toggler:hover{
+    border-color: rgb(153, 94, 248);
+    background-color:rgb(153, 94, 248);
+    box-shadow: 5px 5px 5px rgb(0, 0, 0);
+}
+header nav ul{
+    align-items: center;
+    gap: 10px;
+}
+header nav ul li a{
+    margin: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+.activo{
+    background-color: rgb(198, 160, 255);
+    color:rgb(25, 25, 133);
+    text-shadow: 1px 1px 2px rgb(64, 2, 165);
+    padding: 10px;
+}
+
+/*----Main----*/
+main{
+    background-color: rgb(198, 160, 255);
+    min-height: 80vh;
+}
+section{
+    padding: 5px 10px 10px 5px;
+}
+section div h4 {
+    text-decoration: none;
+}
+.productos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+.box{
+    background-color: rgb(174, 128, 218);
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+    max-width: 300px;
+    max-height: 400px;
+    text-align: center;
+}
+.box img{
+    margin-top: 20px;
+    border-radius: 10px;
+    max-width: 250px;
+}
+.usuario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+}
+.usuario fieldset{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 400px;
+    margin-top: 40px;
+    background-color: rgb(174, 128, 218);
+    padding: 10px;
+    font-size: 20px;
+}
+.boton{
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgb(64, 2, 165);
+    color: aliceblue;
+    font-size: 15px;    
+}
+.boton:active{
+    background-color: rgb(153, 94, 248);
+    color: rgb(25, 25, 133);
+}
+.usuario form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.mainfiltro{
+    display: grid;
+    grid-template-columns: 25vw 75vw;
+}
+
+.asidefiltro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(174, 128, 218);
+}
+.asidefiltro fieldset{
+    display: flex;
+    flex-direction: column;
+}
+/*----Footer----*/
+footer{
+    background-color: rgb(153, 94, 248);
+    min-height: 15vh;
+}
+footer p{
+    text-align: end;
+}
+.pie{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 15px;
+    font-size: 20px;
+}
+.info li::marker{
+    content: "⚪";
+}
+
+/*----Mediaquerie----*/
+@media(max-width: 520px){
+    header h1{
+        font-size: 50px;
+    }
+    .nav-link{
+        font-size: 15px;
+    }
+    main{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .productos{
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    .pie{
+        flex-direction: column;
+        gap: 20px;
+        font-size: 15px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    p{
+        font-size: 15px;
+    }
+    fieldset{
+        font-size: 15px;
+        max-width: 90dvw;
+    }
+    .mainfiltro{
+        grid-template-columns: 1fr;
+    }
+}
