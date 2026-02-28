@@ -9,30 +9,30 @@
 </head>
 <body>
     <header>
-        <h1><img src="../img/Logo2.PNG" alt="LS Insumos"></h1>
+        <h1><img src="../img/logo2.png" class="logo" alt="LS Insumos"></h1>
         <nav class="navbar navbar-expand-lg ">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item fs-3"><a class="nav-link text-light"  href="../index.html">Inicio</a></li>
-                    <li class="nav-item fs-3"><a class="nav-link text-light" href="./productos.html">Productos</a></li>
-                    <li class="nav-item fs-3"><a class="nav-link activo" href="#" >Kits y combos</a></li>
-                    <li class="nav-item fs-3"><a class="nav-link text-light" href="./crear_usuario.html" >Crear Usuario</a></li>
-                    <li class="nav-item fs-3"><a class="nav-link text-light" href="./iniciar_sesion.html" >Iniciar Sesion</a></li>
-                </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar"/>
-                    <button class="btn btn-outline-light" type="submit">Buscar</button>
-                </form>
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item fs-3"><a class="nav-link text-light"  href="../index.html">Inicio</a></li>
+                        <li class="nav-item fs-3"><a class="nav-link text-light" href="./productos.html">Productos</a></li>
+                        <li class="nav-item fs-3"><a class="nav-link activo" href="#" >Kits y combos</a></li>
+                        <li class="nav-item fs-3"><a class="nav-link text-light" href="./crear_usuario.html" >Crear Usuario</a></li>
+                        <li class="nav-item fs-3"><a class="nav-link text-light" href="./iniciar_sesion.html" >Iniciar Sesion</a></li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar"/>
+                        <button class="btn btn-outline-light" type="submit">Buscar</button>
+                    </form>
                 </div>
             </div>
         </nav>
     </header>
 
-    <main class="mainfiltro">
+    <main class="main-produc-kit">
         <aside class="asidefiltro">
             <h2> Filtros </h2>
             <form>
@@ -64,22 +64,218 @@
                 <input class="boton" type="submit" value="Aplicar">
             </form>
         </aside>
-        <section class="productos">
-                <div class="box">
-                    <img src="../img/kit1.webp" alt="Kit 1">
-                    <p>Kit 1</p>
-                    <h4>$45.000</h4>
+        <section>
+            <div class="productos">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    <img src="../img/kit1.jpg" alt="Kit funcional N°1">
+                    <p>Kit funcional N°1</p>
+                    <h3>$55.000</h3>
+                </button>
+                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <p class="modal-title fs-5" id="staticBackdropLabel">Kit funcional N°1</p>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img class="modal1 border-end border-5" src="../img/kit1.jpg" alt="Kit funcional N°1">
+                                <p class="modal2">Mancuernas 1Kg x 2</p>
+                                <p class="modal3">Kettlebell 4Kg x 1</p>
+                                <p class="modal4">Soga de salto x 1</p>
+                                <p class="modal5">Banda suspensión TRX x 1</p>
+                                <p class="modal6">Banda 2 agarres x 1</p>
+                                <h3 class="modal7">Total: $55.000</h3>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary">Agregar al carrito</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="box">
-                    <img src="../img/kit2.webp" alt="Kit 2">
-                    <p>Kit 2</p>
-                    <h4>$60.000</h4>
+
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">
+                    <img src="../img/kit2.jpg" alt="Kit funcional N°2">
+                    <p>Kit funcional N°2</p>
+                    <h3>$74.000</h3>
+                </button>
+                <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <p class="modal-title fs-5" id="staticBackdropLabel">Kit funcional N°2</p>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img class="modal1 border-end border-5" src="../img/kit2.jpg" alt="Kit funcional N°2">
+                                <p class="modal2">Mancuernas 5Kg x 2</p>
+                                <p class="modal4">Soga de salto x 1</p>
+                                <p class="modal5">Banda intercambiables x 5</p>
+                                <h3 class="modal7">Total: $74.000</h3>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary">Agregar al carrito</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="box">
-                    <img src="../img/kit3.webp" alt="Kit 3">
-                    <p>Kit 3</p>
-                    <h4>$125.000</h4>
+
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
+                    <img src="../img/kit3.jpg" alt="Kit barra/disco N°1">
+                    <p>Kit barra/disco N°1</p>
+                    <h3>$163.000</h3>
+                </button>
+                <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <p class="modal-title fs-5" id="staticBackdropLabel">Kit barra/disco N°1</p>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img class="modal1 border-end border-5" src="../img/kit3.jpg" alt="Kit barra/disco N°1">
+                                <p class="modal2">Disco 5Kg x 2</p>
+                                <p class="modal4">Barra maciza 1.50M x 1</p>
+                                <h3 class="modal7">Total: $163.000</h3>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary">Agregar al carrito</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop4">
+                    <img src="../img/kitbarradisco2.jpg" alt="Kit barra/disco N°2">
+                    <p>Kit barra/disco N°2</p>
+                    <h3>$358.000</h3>
+                </button>
+                <div class="modal fade" id="staticBackdrop4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <p class="modal-title fs-5" id="staticBackdropLabel">Kit barra/disco N°2</p>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img class="modal1 border-end border-5" src="../img/kitbarradisco2.jpg" alt="Kit barra/disco N°2">
+                                <p class="modal2">Par de mancuernas con rosca x 1</p>
+                                <p class="modal3">Barra maciza 1.50M x 1</p>
+                                <p class="modal4">Disco 5Kg x 4</p>
+                                <p class="modal5">Disco 2.5Kg x 4</p>
+                                <p class="modal6">Disco 1.25Kg x 4</p>
+                                <h3 class="modal7">Total: $358.000</h3>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary">Agregar al carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop5">
+                    <img src="../img/kitboxeo1.jpg" alt="Kit boxeo N°1">
+                    <p>Kit boxeo N°1</p>
+                    <h3>$120.000</h3>
+                </button>
+                <div class="modal fade" id="staticBackdrop5" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <p class="modal-title fs-5" id="staticBackdropLabel">Kit boxeo N°1</p>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img class="modal1 border-end border-5" src="../img/kitboxeo1.jpg" alt="Kit boxeo N°1">
+                                <p class="modal2">Par de guantes proyec x 1</p>
+                                <p class="modal3">Par de vendas 5M proyec x 1</p>
+                                <p class="modal4">Bucal proyec x 1</p>
+                                <h3 class="modal7">Total: $120.000</h3>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary">Agregar al carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop6">
+                    <img src="../img/kitboxeo2.jpg" alt="Kit boxeo N°2">
+                    <p>Kit boxeo N°2</p>
+                    <h3>$70.000</h3>
+                </button>
+                <div class="modal fade" id="staticBackdrop6" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <p class="modal-title fs-5" id="staticBackdropLabel">Kit boxeo N°2</p>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img class="modal1 border-end border-5" src="../img/kitboxeo2.jpg" alt="Kit boxeo N°2">
+                                <p class="modal2">Bolsa 70Cm rellena x 1</p>
+                                <p class="modal3">Par de guantes x 1</p>
+                                <p class="modal4">Bucal simple x 1</p>
+                                <h3 class="modal7">Total: $70.000</h3>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary">Agregar al carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop7">
+                    <img src="../img/kitboxeo3.jpg" alt="Kit boxeo N°3">
+                    <p>Kit boxeo N°3</p>
+                    <h3>$95.000</h3>
+                </button>
+                <div class="modal fade" id="staticBackdrop7" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <p class="modal-title fs-5" id="staticBackdropLabel">Kit boxeo N°3</p>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img class="modal1 border-end border-5" src="../img/kitboxeo3.jpg" alt="Kit boxeo N°3">
+                                <p class="modal2">Bolsa 70Cm rellena x 1</p>
+                                <p class="modal3">Par de guantes x 2</p>
+                                <h3 class="modal7">Total: $95.000</h3>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary">Agregar al carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop8">
+                    <img src="../img/kitfuncional3.jpg" alt="Kit funcional N°3">
+                    <p>Kit funcional N°3</p>
+                    <h3>$73.000</h3>
+                </button>
+                <div class="modal fade" id="staticBackdrop8" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <p class="modal-title fs-5" id="staticBackdropLabel">Kit funcional N°3</p>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img class="modal1 border-end border-5" src="../img/kitfuncional3.jpg" alt="Kit funcional N°3">
+                                <p class="modal2">Banda 2 agarres x 1</p>
+                                <p class="modal3">Kit banda de tela circular x 3</p>
+                                <p class="modal4">Kit banda para dominadas x 3</p>
+                                <h3 class="modal7">Total: $73.000</h3>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary">Agregar al carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>         
         </section>
     </main>
 

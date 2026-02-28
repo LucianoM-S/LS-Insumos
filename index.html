@@ -9,24 +9,24 @@
 </head>
 <body>
     <header>
-        <h1><img src="./img/Logo2.PNG" alt="LS Insumos"></h1>
+        <h1><img src="./img/logo2.png" class="logo" alt="LS Insumos"></h1>
         <nav class="navbar navbar-expand-lg ">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item fs-3"><a class="nav-link activo"  href="#">Inicio</a></li>
-                    <li class="nav-item fs-3"><a class="nav-link text-light" href="./pages/productos.html">Productos</a></li>
-                    <li class="nav-item fs-3"><a class="nav-link text-light" href="./pages/kits.html" >Kits y combos</a></li>
-                    <li class="nav-item fs-3"><a class="nav-link text-light" href="./pages/crear_usuario.html" >Crear Usuario</a></li>
-                    <li class="nav-item fs-3"><a class="nav-link text-light" href="./pages/iniciar_sesion.html" >Iniciar Sesion</a></li>
-                </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar"/>
-                    <button class="btn btn-outline-light" type="submit">Buscar</button>
-                </form>
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item fs-3"><a class="nav-link activo"  href="#">Inicio</a></li>
+                        <li class="nav-item fs-3"><a class="nav-link text-light" href="./pages/productos.html">Productos</a></li>
+                        <li class="nav-item fs-3"><a class="nav-link text-light" href="./pages/kits.html" >Kits y combos</a></li>
+                        <li class="nav-item fs-3"><a class="nav-link text-light" href="./pages/crear_usuario.html" >Crear Usuario</a></li>
+                        <li class="nav-item fs-3"><a class="nav-link text-light" href="./pages/iniciar_sesion.html" >Iniciar Sesion</a></li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar"/>
+                        <button class="btn btn-outline-light" type="submit">Buscar</button>
+                    </form>
                 </div>
             </div>
         </nav>
@@ -35,50 +35,152 @@
     <main>
         <section>
             <h2>Bienvenidos a LS Insumos</h2>
-            <P>En nuestra tienda vas a encontrar todo lo que necesitás para llevar tu entrenamiento al siguiente nivel. Creemos que el progreso empieza con las herramientas correctas, por eso ofrecemos insumos de calidad, pensados tanto para quienes recién comienzan como para atletas exigentes.</P>
+            <p>En nuestra tienda vas a encontrar todo lo que necesitás para llevar tu entrenamiento al siguiente nivel. Creemos que el progreso empieza con las herramientas correctas, por eso ofrecemos insumos de calidad, pensados tanto para quienes recién comienzan como para atletas exigentes.</p>
             <p>Nos especializamos en insumos de entrenamiento diseñados para mejorar el rendimiento, la comodidad y la seguridad en cada sesión. Contamos con una amplia variedad de productos ideales para gimnasio, entrenamiento funcional, cross training y uso en casa.</p>
             <p>Trabajamos con materiales resistentes y marcas confiables para garantizar durabilidad y resultados reales. Ya sea que entrenes fuerza, resistencia o movilidad, acá vas a encontrar el equipamiento ideal para alcanzar tus objetivos.</p>
             <p>Entrená mejor. Entrená con confianza. Entrená con nosotros.</p>
         </section>
         <section>
             <h2>Productos destacados</h2>
-            <div class="productos">
-                <div class="box">
-                    <img src="./img/disco10k.webp" alt="Disco 10KG">
-                    <p>Disco 10KG</p>
-                    <h4>$24.000</h4>
+
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="container">
+                            <div class="row justify-content-center g-4">
+                                <div class="col-md-4">
+                                    <div class="box">
+                                        <img src="./img/disco10k.jpg" alt="Disco 10KG">
+                                        <p>Disco 10KG</p>
+                                        <h3>$24.000</h3>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="box">
+                                        <img src="./img/guantesboxeoproyec.jpg" alt="Guantes de boxeo Proyec Forza">
+                                        <p>Guantes de boxeo Proyec Forza</p>
+                                        <h3>$88.100</h3>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="box">
+                                        <img src="./img/barraolimpica16kg.jpg" alt="Barra olimpica 16KG">
+                                        <p>Barra olimpica 16KG</p>
+                                        <h3>$24.000</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container">
+                            <div class="row justify-content-center g-4">
+                                <div class="col-md-4">
+                                    <div class="box">
+                                        <img src="./img/anillasdesuspencion.jpg" alt="Anillas de suspencion">
+                                        <p>Anillas de suspencion</p>
+                                        <h3>$73.000</h3>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="box">
+                                        <img src="./img/bancoplano.jpg" alt="Banco plano">
+                                        <p>Banco plano</p>
+                                        <h3>$147.000</h3>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="box">
+                                        <img src="./img/kettlebell16kg.jpg" alt="Ketllebell 16Kg">
+                                        <p>Ketllebell 16Kg</p>
+                                        <h3>$111.000</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="box">
-                    <img src="./img/guantesboxeoproyec.webp" alt="Guantes de boxeo Proyec Forza">
-                    <p>Guantes de boxeo Proyec Forza</p>
-                    <h4>$88.100</h4>
-                </div>
-                <div class="box">
-                    <img src="./img/barraolimpica16kg.webp" alt="Barra olimpica 16KG">
-                    <p>Barra olimpica 16KG</p>
-                    <h4>$24.000</h4>
-                </div>
-            </div>    
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
         </section>
         <section>
             <h2>Ofertas del dia</h2>
-            <div class="productos">
-                <div class="box">
-                    <img src="./img/bancoparaabdominales.webp" alt="Banco para abdominales">
-                    <p>Banco para abdominales</p>
-                    <h4>$80.000</h4>
+            
+            <div id="carouselExampleAutoplaying1" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="container">
+                            <div class="row justify-content-center g-4">
+                                <div class="col-md-4">
+                                    <div class="box">
+                                        <img src="./img/pushup.jpg" alt="Push up">
+                                        <p>Push up</p>
+                                        <h3>$13.000</h3>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="box">
+                                        <img src="./img/rollmasajeador.jpg" alt="Roll masajeador">
+                                        <p>Roll masajeador</p>
+                                        <h3>$28.000</h3>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="box">
+                                        <img src="./img/cinturodelastre.jpg" alt="Cinturon de lastre">
+                                        <p>Cinturon de lastre</p>
+                                        <h3>$42.000</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container">
+                            <div class="row justify-content-center g-4">
+                                <div class="col-md-4">
+                                    <div class="box">
+                                        <img src="./img/discobodypump5kg.jpg" alt="Disco body pump 5Kg">
+                                        <p>Disco body pump 5Kg</p>
+                                        <h3>$13.000</h3>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="box">
+                                        <img src="./img/cabezalraptor.jpg" alt="Cabezal raptor">
+                                        <p>Cabezal raptor</p>
+                                        <h3>$78.000</h3>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="box">
+                                        <img src="./img/cajon.jpg" alt="Cajon de salto">
+                                        <p>Cajon de salto</p>
+                                        <h3>$60.000</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="box">
-                    <img src="./img/cajon.webp" alt="Cajon de salto">
-                    <p>Cajon de salto</p>
-                    <h4>$60.000</h4>
-                </div>
-                <div class="box">
-                    <img src="./img/paralelas.webp" alt="Paralelas">
-                    <p>Paralelas</p>
-                    <h4>$105.000</h4>
-                </div>
-            </div>    
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying1" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying1" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            
         </section>
     </main>
 
