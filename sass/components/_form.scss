@@ -1,0 +1,28 @@
+@use '../utilities/variables' as *;
+@use '../utilities/mixins' as *;
+
+/*----Form----*/
+
+.usuario{
+    margin-top: 60px;
+    @include valores-flex(center, null, column);
+    form{
+        @include valores-flex(center, null, column);
+        fieldset{
+            gap: 10px;
+            width: 400px;
+            margin-top: 40px;
+            padding: 10px;
+            font-size: 20px;
+            @include valores-flex(null, null, column);
+            background-color: $color-box-filtro;
+        }
+    }
+}
+.asidefiltro{
+    @include valores-flex(center, null, column);
+    background-color: $color-box-filtro;
+    fieldset{
+        @include valores-flex(null, null, column);
+    }
+}

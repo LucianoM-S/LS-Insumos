@@ -1,0 +1,38 @@
+@use '../utilities/variables' as *;
+@use '../utilities/mixins' as *;
+
+/*----Botones----*/
+
+.boton{
+    background-color: $color-header;
+    color: $color-letra-secundario;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 15px;
+    border: none;
+    transition: transform 0.3s,
+                background-color 0.3s;
+    &:hover{
+        cursor: pointer;
+        transform: translateY(-10px);
+        background-color: $color-footer;
+        color: $color-letra-primario;
+        
+    }
+    &:active{
+        transform: translateY(-5px);
+        background-color: $color-footer;
+        color: $color-letra-primario;
+    }                           
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon{
+    padding: 15px;
+    border-radius: 50%;
+    background-color: $color-header;
+}
+.carousel-control-next, 
+.carousel-control-prev{
+    width: 5%;
+}

@@ -1,5 +1,5 @@
 @use 'base/reset';
-@use 'base/tipografias';
+@use 'base/tipografia';
 @use 'layout/general';
 @use 'layout/header';
 @use 'layout/main';
@@ -8,3 +8,4 @@
 @use 'components/cards';
 @use 'components/button';
 @use 'components/form';
+@use 'components/modal';

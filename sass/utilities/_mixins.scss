@@ -1,0 +1,35 @@
+@use '../utilities/variables' as *;
+
+@mixin valores-flex($aling, $justify, $direction){
+    display: flex;
+    align-items: $aling;
+    justify-content: $justify;
+    flex-direction: $direction; 
+}
+@mixin valores-grid($columns){
+    display: grid;
+    grid-template-columns: $columns;
+}
+@mixin valores-img($margin-t, $border-r, $width-m ,$height){
+    margin-top: $margin-t;
+    border-radius: $border-r;
+    max-width: $width-m;
+    height: $height;
+}
+@mixin valores-box{
+    background-color: $color-box-filtro;
+    border-radius: 30px;
+    max-width: 300px;
+    max-height: 400px;
+    overflow: hidden;
+    transition: transform 0.3s,
+                box-shadow 0.3s,
+                background-color 0.3s;
+    &:hover{
+        transform: scale(1.1);
+        box-shadow: 3px 3px 10px $color-header;
+        cursor: pointer;
+        background-color: $color-header;
+        color: $color-letra-secundario;
+    }            
+} 

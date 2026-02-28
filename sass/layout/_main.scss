@@ -1,0 +1,24 @@
+@use '../utilities/variables' as *;
+@use '../utilities/mixins' as *;
+
+/*----Main----*/
+
+main{
+    min-height: 65vh;
+    background-color: $color-main;
+    section{
+        padding: 20px 10px 10px 20px;
+    }
+}
+.main-produc-kit{
+    @include valores-grid(20vw 75vw);
+}
+.productos{
+    gap: 40px;
+    @include valores-grid(repeat(3, 1fr));
+}
+.carousel-item{
+    padding: 10px 40px;
+}
+
+

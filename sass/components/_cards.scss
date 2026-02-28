@@ -1,0 +1,21 @@
+@use '../utilities/variables' as *;
+@use '../utilities/mixins' as *;
+
+/*----Cards----*/
+
+.box{
+    @include valores-flex(center, center, column);
+    text-align: center;
+    @include valores-box;
+    img{
+        @include valores-img(20px, 10px, 80%, auto);
+    }         
+}
+.productos button{
+    color: $color-letra-primario;
+    border: none;
+    @include valores-box;
+    img{
+        @include valores-img(20px, 10px, 80%, auto);
+    }
+}
