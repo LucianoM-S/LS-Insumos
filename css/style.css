@@ -120,6 +120,16 @@ main section {
   padding: 10px 40px;
 }
 
+.productos-inicio {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  padding: 40px;
+}
+.productos-inicio section {
+  text-align: center;
+}
+
 /*----Footer----*/
 footer {
   min-height: 15vh;
@@ -137,8 +147,14 @@ footer p {
   justify-content: space-evenly;
 }
 
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
 .info li::marker {
-  content: "⚪";
+  content: "▪️";
 }
 
 /*----Mediaquerie----*/
@@ -173,6 +189,10 @@ footer p {
     max-width: 90dvw;
   }
   .main-produc-kit {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .productos-inicio {
     display: grid;
     grid-template-columns: 1fr;
   }
@@ -287,11 +307,13 @@ footer p {
   gap: 10px;
   width: 400px;
   margin-top: 40px;
-  padding: 10px;
+  padding: 20px;
   font-size: 20px;
   display: flex;
   flex-direction: column;
   background-color: rgb(174, 128, 218);
+  border-radius: 20px;
+  box-shadow: 3px 3px 10px rgb(64, 2, 165);
 }
 
 .asidefiltro {

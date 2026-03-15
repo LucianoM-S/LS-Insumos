@@ -15,6 +15,9 @@ footer{
     font-size: 20px;
     @include valores-flex(center, space-evenly, null);
 }
-.info li::marker{
-    content: "⚪";
-}
+.info{
+    @include valores-flex(center, center, column);
+    li::marker{
+    content: "▪️";
+    }
+  }

@@ -39,6 +39,9 @@
     .main-produc-kit{
         @include valores-grid(1fr);
     }
+    .productos-inicio{
+        @include valores-grid(1fr);
+    }
 
     /*---Footer---*/
 

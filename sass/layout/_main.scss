@@ -20,5 +20,14 @@ main{
 .carousel-item{
     padding: 10px 40px;
 }
+.productos-inicio{
+    @include valores-grid(repeat(2, 1fr));
+    gap:40px;
+    padding:40px;
+    section{
+        text-align: center;
+    }
+}
+
 
 

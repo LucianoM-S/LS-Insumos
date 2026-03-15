@@ -12,10 +12,12 @@
             gap: 10px;
             width: 400px;
             margin-top: 40px;
-            padding: 10px;
+            padding: 20px;
             font-size: 20px;
             @include valores-flex(null, null, column);
             background-color: $color-box-filtro;
+            border-radius: 20px;
+            box-shadow: 3px 3px 10px $color-header;
         }
     }
 }
