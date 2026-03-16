@@ -17,8 +17,8 @@ main{
     gap: 40px;
     @include valores-grid(repeat(3, 1fr));
 }
-.carousel-item{
-    padding: 10px 40px;
+.carousel, .carousel-item{
+    padding: 20px 40px;
 }
 .productos-inicio{
     @include valores-grid(repeat(2, 1fr));

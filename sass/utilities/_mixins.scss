@@ -19,8 +19,8 @@
 @mixin valores-box{
     background-color: $color-box-filtro;
     border-radius: 30px;
-    max-width: 300px;
-    max-height: 400px;
+    max-width: 600px;
+    max-height: 800px;
     overflow: hidden;
     transition: transform 0.3s,
                 box-shadow 0.3s,

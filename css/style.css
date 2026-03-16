@@ -24,7 +24,7 @@ h1, h2, h4 {
 }
 
 h2 {
-  font-size: 40px;
+  font-size: 50px;
 }
 
 p {
@@ -116,8 +116,8 @@ main section {
   grid-template-columns: repeat(3, 1fr);
 }
 
-.carousel-item {
-  padding: 10px 40px;
+.carousel, .carousel-item {
+  padding: 20px 40px;
 }
 
 .productos-inicio {
@@ -213,8 +213,8 @@ footer p {
   text-align: center;
   background-color: rgb(174, 128, 218);
   border-radius: 30px;
-  max-width: 300px;
-  max-height: 400px;
+  max-width: 600px;
+  max-height: 800px;
   overflow: hidden;
   transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
 }
@@ -237,8 +237,8 @@ footer p {
   border: none;
   background-color: rgb(174, 128, 218);
   border-radius: 30px;
-  max-width: 300px;
-  max-height: 400px;
+  max-width: 600px;
+  max-height: 800px;
   overflow: hidden;
   transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
 }
